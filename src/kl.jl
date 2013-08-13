@@ -24,7 +24,7 @@ end
 # symmetrized divergence for a single sample
 
 function skl_sample_divergence(dist1_probab::Float64, dist2_probab::Float64)
-    return kl_sample_divergence(dist1_probab,dist2_probab) + kl_sample_divergence(dist2_probab,dist2_probab)
+    return kl_sample_divergence(dist1_probab,dist2_probab) + kl_sample_divergence(dist2_probab,dist1_probab)
 end
 
 # Jensen-Shannon divergence for a single sample (symmetric)
