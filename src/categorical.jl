@@ -6,7 +6,6 @@ import Distributions.Categorical
 # just too many categories, resort to Monte Carlo estimation.
 
 function categorical_divergence_estimate(d1::Categorical, d2::Categorical, samples::Integer, sample_divergence_func::Function)
-    println("test")
     if d1.K != d2.K || d1.K > samples
         # resort to sampling
         return mc_divergence_estimate(d1, d2, samples, sample_divergence_func)
