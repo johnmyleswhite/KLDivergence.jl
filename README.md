@@ -3,7 +3,7 @@ KLDivergence.jl
 
 # NOTICE
 
-**This package should not be used.**
+**This package should not be used. There are major bugs in the code and they will not be fixed.**
 
 # Introduction
 
